@@ -1,20 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
-import { NavigationContainer } from '@react-navigation/native';
-import { createDrawerNavigator } from '@react-navigation/drawer';
-import 'react-native-gesture-handler';
+import { NavigationContainer, StackActions } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import HomeScreen from './src/screens/HomeScreen';
-import ProfileScreen from './src/screens/ProfileScreen';
+import BurgerMenu from './src/navigation/BurgerMenu';
 
-const Drawer = createDrawerNavigator();
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Drawer.Navigator initialRouteName='Home'>
-        <Drawer.Screen name='Home' component={HomeScreen} />
-        <Drawer.Screen name='My profile' component={ProfileScreen} />
-      </Drawer.Navigator>
+      <Stack.Navigator  screenOptions={{ headerShown: false }}>
+        <Stack.Screen name='Burger Menu' component={BurgerMenu} />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 }
