@@ -3,6 +3,7 @@ import { NavigationContainer, StackActions } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import BurgerMenu from './src/navigation/BurgerMenu';
+import BottomTabs from './src/navigation/BottomTabs';
 
 const Stack = createNativeStackNavigator();
 
