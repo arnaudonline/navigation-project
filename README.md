@@ -8,10 +8,10 @@ The Node version of the project is v16.14.2
 
 ## Made with :
 
-Expo
-React Native
-React Navigation
-React Native Paper
+- Expo
+- React Native
+- React Navigation
+- React Native Paper
 
 ## Usage
 
