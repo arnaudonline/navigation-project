@@ -1,6 +1,6 @@
 import { View, Text, Button } from "react-native"; 
 
-const ProfileScreen = ({ navigation }) => {
+const ProfileScreen = ({navigation}: {navigation: any}) => {
   return (
     <View style={{ flex:1, alignItems: 'center', justifyContent: 'center'}}>
       <Text style={{ fontSize: 20, color: 'green'}}>My profile !</Text>

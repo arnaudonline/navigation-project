@@ -7,7 +7,7 @@ import MoreInfos from "../screens/MoreInfos";
 
 const Stack = createNativeStackNavigator();
 
-const ProfileNavPages = ({ navigation }) => {
+const ProfileNavPages = ({navigation}: {navigation: any}) => {
   return (
     <Stack.Navigator>
       <Stack.Screen

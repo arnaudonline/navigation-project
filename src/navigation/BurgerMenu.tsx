@@ -8,7 +8,7 @@ import ProfileNavPages from "./ProfileNavPages";
 
 const Drawer = createDrawerNavigator();
 
-const BurgerMenu = ({ navigation }) => {
+const BurgerMenu = ({navigation}: {navigation: any}) => {
   return (
     <Drawer.Navigator initialRouteName="Home with BottomTabs" >
       <Drawer.Screen
