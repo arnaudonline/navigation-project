@@ -3,14 +3,14 @@ import "react-native-gesture-handler";
 import { Button } from "react-native";
 
 import HomeScreen from "../screens/HomeScreen";
-import ProfileScreen from "../screens/ProfileScreen";
 import BottomTabs from "./BottomTabs";
+import ProfileNavPages from "./ProfileNavPages";
 
 const Drawer = createDrawerNavigator();
 
 const BurgerMenu = ({ navigation }) => {
   return (
-    <Drawer.Navigator initialRouteName="Home with BottomTabs">
+    <Drawer.Navigator initialRouteName="Home with BottomTabs" >
       <Drawer.Screen
         name="Home with BottomTabs"
         component={BottomTabs}
@@ -23,7 +23,7 @@ const BurgerMenu = ({ navigation }) => {
           ),
         }}
       />
-      <Drawer.Screen name="Profile" component={ProfileScreen} />
+      <Drawer.Screen name="Profile" component={ProfileNavPages} options={{headerShown: false}} />
     </Drawer.Navigator>
   );
 };
